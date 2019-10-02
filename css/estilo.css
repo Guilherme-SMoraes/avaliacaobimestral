@@ -1,5 +1,5 @@
 html{
-    font-family: 'Arial';
+    font: 16px 'Arial',sans-serif;
 }
 
 .container{
@@ -46,35 +46,18 @@ input{
     border-radius: 100px;
     padding: 0 15px;
 }
+/* Transition */
+#Plus:hover{
+    font-size: 75px;
+    transition: font-size 1s;
+}
 .right{
     float:right;
-}
-
-.paginacao {
-    display: inline-block;
-    margin-top: 15px;
-}
-.paginacao a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
 }
 form .form-group{
     padding: 5px;
     margin: 3px 0;
     display: flex;
-}
-
-.paginacao a.active {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-}
-  
-.paginacao a:hover:not(.active) {
-    background-color: #ddd;
-    border-radius: 5px;
 }
 footer object{
     position: absolute;
@@ -87,6 +70,10 @@ footer object{
     display: flex;
     justify-content: flex-end;
 }
+/* Pseudo-elemento */
+.copyright::before{
+    content: 'C';
+}
 .copyright{
     float: right;
     border: 1px solid black;
@@ -96,6 +83,11 @@ footer object{
 body{
     width: 99%;
     box-sizing: border-box;
+    background-image: url('../img/backimg.jpg')
+}
+/* Pseudo-classe */
+.buttonLink:hover{
+    background: #fff;
 }
 .navBody{
     margin:0;

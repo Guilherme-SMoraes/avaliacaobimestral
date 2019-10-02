@@ -22,7 +22,7 @@
             <form action="index.html" class="bloco blocoColuna alinha-left" style="align-items: initial">
                 <div class="form-group">
                     <label for="titulo">Título*</label>
-                    <input type="text" name="titulo" id="titulo" style="width: 70%"/>
+                    <input type="text" name="titulo" id="titulo" style="width: 70%" required autofocus/>
                 </div>
                 <div class="fotoAutor">
                     <img src="./img/usuario.jpg" alt="Foto do Autor">
@@ -32,17 +32,17 @@
                     <label for="autor">Autor*</label>
                     <div style="width: 75%">
                         <input type="text" name="autor" id="autor" style="width: 40%"/>
-                        <input type="text" name="autorSobrenome" id="tiautorSobrenometulo" style="width: 45%"/>
+                        <input type="text" name="autorSobrenome" id="tiautorSobrenometulo" style="width: 45%" required/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="origem">Origem*</label>
-                    <input type="radio" name="origem" id="origemN" checked> Nacional
+                    <input type="radio" name="origem" id="origemN" checked required> Nacional
                     <input type="radio" name="origem" id="origemI"> Internacional
                 </div>
                 <div class="form-group">
                     <label for="genero">Gênero*</label>
-                    <select name="genero" id="genero">
+                    <select name="genero" id="genero" required>
                         <option value="romance">Romance</option>
                         <option value="aventura">Aventura</option>
                         <option value="ficcao">Ficção</option>
@@ -51,11 +51,11 @@
                 </div>
                 <div class="form-group">
                     <label for="publicacao">Publicação*</label>
-                    <input type="date" name="publicacao" id="publicacao" style="width: 70%"/>
+                    <input type="date" name="publicacao" id="publicacao" style="width: 70%" required/>
                 </div>
                 <div class="center">
-                    <button type="submit" class="btn btn-danger">Cancelar</button>
-                    <button type="reset" class="btn btn-success">Salvar</button>
+                    <button type="reset" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Salvar</button>
                 </div>
             </form>
         </div>           
